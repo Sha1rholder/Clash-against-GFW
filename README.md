@@ -1,4 +1,6 @@
-傻瓜式教程《如何使用 Clash 翻墙》，本文于 **2023 年 7 月 1 日** 发布于 https://github.com/Sha1rholder/Clash-against-GFW 并持续更新。点击 [此处](https://github.com/Sha1rholder/Clash-against-GFW/README.pdf) 下载最新版教程，欢迎转载
+傻瓜式教程《如何使用 Clash 翻墙》，本文发布于 https://github.com/Sha1rholder/Clash-against-GFW 并不定期更新，随意转载
+
+由于近期 Clash for Windows 等删库跑路，本文部分内容可能无法正常按步骤进行，编者目前正在搜寻更好的办法，稍后会更新文章内容，敬请期待
 
 - [订阅机场，获取节点](#订阅机场获取节点)
 - [Windows10/11](#windows1011)
