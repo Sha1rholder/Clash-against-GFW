@@ -74,11 +74,8 @@ CFA 英文原版：https://github.com/Sha1rholder/Clash-against-GFW/releases/dow
 
 GitHub 的服务器在境外，国内访问有时不稳定，可以使用 Watt Toolkit（原名 Steam++）加速 GitHub 等服务
 
-在官网 https://steampp.net/ 下载 Watt Toolkit。该软件完全免费且开源，可以放心使用  
-![watt1](resources/watt1.png)
-
-推荐从微软商店下载，国内可用且稳定自动更新  
-![watt2](resources/watt2.png)
+点击下方链接通过官方 Gitee 渠道下载 Watt Toolkit v2.8.6。该软件完全免费且开源，可以放心使用  
+https://gitee.com/rmbgame/SteamTools/releases/download/2.8.6/Steam%20%20_win_x64_v2.8.6.exe
 
 将软件语言改为中文（开启加速功能的必要条件！）  
 ![watt3](resources/watt3.png)
