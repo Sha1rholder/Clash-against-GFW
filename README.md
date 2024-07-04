@@ -1,104 +1,58 @@
 傻瓜式教程《如何使用 Clash 翻墙》，本文发布于 https://github.com/Sha1rholder/Clash-against-GFW 并不定期更新，随意转载
 
-由于近期 Clash for Windows 等删库跑路，本文部分内容可能无法正常按步骤进行，编者目前正在搜寻更好的办法，稍后会更新文章内容，敬请期待
+由于一些 Clash 的 GUI 实现（Clash for Windows、Clash for Android）以及内核删库跑路，本文在 Release 处放了这些软件的下载链接
 
-- [订阅机场，获取节点](#订阅机场获取节点)
-- [Windows10/11](#windows1011)
-  - [安装 Clash for Windows](#安装-clash-for-windows)
-  - [（可选）汉化 Clash](#可选汉化-clash)
-  - [导入配置文件](#导入配置文件)
-  - [配置 Clash](#配置-clash)
-- [Android/HarmonyOS](#androidharmonyos)
-  - [安装 Clash for Android](#安装-clash-for-android)
-  - [导入配置文件](#导入配置文件-1)
-  - [配置 Clash](#配置-clash-1)
-- [Tips](#tips)
-  - [我上不了 GitHub](#我上不了-github)
-  - [Clash 中代理模式的区别](#clash-中代理模式的区别)
-  - [Windows 突然无法上网](#windows-突然无法上网)
-  - [无法使用 ChatGPT、Netflix 等特定服务](#无法使用-chatgptnetflix-等特定服务)
+# 订阅机场
 
-# 订阅机场，获取节点
+先找个机场，具体选择什么机场请由周围朋友推荐。机场是黑产，跑路风险极大，因此绝对不要包年买。普通用户没有能力了解机场的稳定性和速度，建议同时至少保持订阅两家机场一家主力一家备用。对于主力机场，经常上外网看视频的用户按包月买，不经常看视频的用户买 100 GB 左右不限时的流量包即可；备用机场只需要买一个不限时流量包就行
 
-以 GlaDOS 为例，注册成为用户 https://glados.space/landing/UFR6K-QAGM5-DO95Q-KQPCR （末尾为我的邀请码，通过邀请码注册可以获得额外的订阅时长）  
-![glados1](resources/glados1.png)
+![机场1](resources/机场1.png)  
+购买机场后，请在官网复制订阅链接，稍后会用到
 
-（可选）**如果你是学生且有一个 edu 教育邮箱**，可以免费获得一年的 GlaDOS 订阅时长。打开 https://glados.rocks/console/education 并在页面底部验证你的教育邮箱（偶尔会出现无法验证的情况，请过一天再试）  
-![gladosedu](resources/gladosedu.png)
-
-如果你不是学生或没有 edu 教育邮箱，请在 https://glados.rocks/console/shop 页面选择合适的套餐并购买  
-![glados2](resources/glados2.png)
-
-# Windows10/11
+# Windows
 
 ## 安装 Clash for Windows
 
-在 Clash for Windows 的 GitHub 页面 https://github.com/Fndroid/clash_for_windows_pkg/releases 找到最新版本的发布页，点击红框中的最新版本号（截至 2023 年 7 月 1 日，最新版 Clash for Windows 为 v0.20.27）  
-![clash1](resources/clashwin1.png)
+Clash for Windows（简称 CFW）已经删库跑路，请使用以下链接下载 CFW 或 CFW 汉化版
 
-如果无法下载，可以参考 Tips [我上不了 GitHub](#我上不了-github) 加速 GitHub 后下载
+CFW 英文原版：https://github.com/Sha1rholder/Clash-against-GFW/releases/download/Clash/Clash.for.Windows.v0.20.39.setup.exe  
+CFW 汉化版：https://github.com/Sha1rholder/Clash-against-GFW/releases/download/Clash/Clash.for.Windows.v0.20.39.Chinese.setup.exe  
+（如果下载卡住请关闭下载器用浏览器自带下载引擎下载）
 
-下载你的电脑对应架构的安装包（通常是 x64，对应下图红框中安装包）  
-![clash2](resources/clashwin2.png)
-
-打开已下载的.exe 文件，根据指引安装 Clash for Windows，记住文件路径
-
-## （可选）汉化 Clash
-
-在 Clash_Chinese_Patch 的 GitHub 页面 https://github.com/BoyceLig/Clash_Chinese_Patch/releases/ 找到对应你 clash 版本的发布页，点击红框中的最新版本号（截至 2023 年 7 月 1 日，最新版汉化补丁为 v0.20.27）  
-![clashchinese1](resources/clashchinese1.png)
-
-下载.zip 压缩包  
-![clashchinese2](resources/clashchinese2.png)
-
-双击进入压缩包，并找到 Clash for Windows 的安装目录，将压缩包中的 app.asar 粘贴到该目录下替换原本的 app.asar 文件  
-![clashchinese3](resources/clashchinese3.png)  
-![clashchinese4](resources/clashchinese4.png)
-
-## 导入配置文件
-
-参考上文订阅 GlaDOS 后，在 https://glados.rocks/console/clash 页面将配置文件导入 Clash  
-![glados3](resources/glados3.png)  
-![glados4](resources/glados4.png)
-
-打开 Clash 界面，查看配置文件是否已成功导入。若成功导入则左键点击切换到该配置文件（左边出现绿条）  
-![glados5](resources/glados5.png)
-
-如果自动导入失败，可以尝试手动导入配置文件，复制上上步中配置文件的连接，通过 URL 下载配置文件，然后执行上一步中的操作  
-![glados6](resources/glados6.png)
+如果无法下载，可以参考 Tips [我上不了 GitHub](#我上不了-github)
 
 ## 配置 Clash
 
-开启模式图标，查看状态栏是否出现一个字母（蓝色代表未开启系统代理）  
+将订阅的配置文件链接粘贴进 URL 栏，下载配置文件。下载完成后点击刚下载好的配置文件切换过去（左边会变绿）  
+![CFW subscribe](resources/cfwsub.png)
+
+开启模式图标，查看状态栏是否出现一个字母，如果在状态栏找不到可以点击右状态栏左侧向上的小箭头找（蓝色代表未开启系统代理）  
 ![clashwin5](resources/clashwin5.png)  
 ![clashwin6](resources/clashwin6.png)
+
+进行延迟检测，选择合适的代理模式和节点，一般来说有 Auto 就用 Auto 即可。节点的名称通常具有其物理地址的含义，例如 `HK` 代表香港节点，`US` 代表美国节点；绿色数字代表延迟，越低越好，红色 Timeout 代表与该节点通讯异常，不建议选择  
+![clashwin4](resources/clashwin4.png)
 
 开启系统代理，检查托盘图标是否变成黄色（黄色代表已开启系统代理）  
 ![clashwin3](resources/clashwin3.png)  
 ![clashwin7](resources/clashwin7.png)
 
-进行延迟检测，选择合适的代理模式和节点。节点的名称通常具有其物理地址的含义，例如 `HK` 代表香港节点，`US` 代表美国节点；绿色数字代表延迟，越低越好，红色 Timeout 代表与该节点通讯异常，不建议选择  
-![clashwin4](resources/clashwin4.png)
-
-打开浏览器，访问 https://www.google.com/ 检查是否成功科学上网  
+打开浏览器，访问 https://www.google.com 检查是否成功科学上网  
 ![clashwin8](resources/clashwin8.png)
 
 **Enjoy your free time!**
 
-# Android/HarmonyOS
+# Android
 
 ## 安装 Clash for Android
 
-在 https://github.com/Kr328/ClashForAndroid/releases 找到最新的 Clash for Android 发布版本（截至 2023 年 7 月 1 日，最新版为），下载手机对应架构的安装包并安装（通常是下图圈出的版本）  
-![clashand1](resources/clashand1.jpg)
+Clash for Android（简称 CFA）已经删库跑路，请使用以下链接下载 CFW（目前只有英文版）
 
-如果无法下载，可以参考 Tips [我上不了 GitHub](#我上不了-github) 从电脑上下载所需 .apk 文件给手机安装
+CFA 英文原版：https://github.com/Sha1rholder/Clash-against-GFW/releases/download/Clash/Clash.for.Android.v3.0.3.premium.apk
+
+如果无法下载，可以参考 Tips [我上不了 GitHub](#我上不了-github) 从电脑上下载所需 .apk 文件后发送给手机安装
 
 ## 导入配置文件
-
-参考上文订阅 GlaDOS 后，在 https://glados.rocks/console/clash 页面将配置文件导入 Clash  
-![gladosand1](resources/gladosand1.jpg)  
-![gladosand2](resources/gladosand2.jpg)
 
 ## 配置 Clash
 
@@ -129,7 +83,7 @@ GitHub 的服务器在境外，国内访问有时不稳定，可以使用 Watt T
 将软件语言改为中文（开启加速功能的必要条件！）  
 ![watt3](resources/watt3.png)
 
-全选加速服务，关闭 GitHub Api（可能与 GitHub Copilot 等服务冲突）并开始加速  
+全选加速服务，关闭 GitHub Api（加速 GitHub Api 可能与 GitHub Copilot 等服务冲突）并开始加速  
 ![watt4](resources/watt4.png)
 
 出现“加速已启动成功”即可  
@@ -142,12 +96,12 @@ Clash 中有四种代理模式：全局代理、规则代理、直连和脚本�
 
 - 全局代理：所有流量都通过代理服务器。对流量消耗较大，可能无法使用部分国内服务
 - 规则代理：根据规则选择性地通过代理服务器。基本可以理解为“只有外网流量走代理”，对流量消耗较小，基本可以常开。偶尔出现规则之外的情况，可以使用外部规则转换器如 ZJU-Rule 等优化代理规则或开启全局代理
-- 直连：所有流量都不通过代理服务器。暂时无法科学上网，和关闭系统代理差不多
-- 脚本：看这篇教程的人不需要懂这个
+- 直连：所有流量都不通过代理服务器。通常等效于关闭系统代理
+- 脚本：你不需要了解这个
 
 ## Windows 突然无法上网
 
-如果你发现电脑联网但无法访问任何网站，可以尝试打开 Clash，开启系统代理再退出 Clash。该问题可能是由于上一次 Clash 未正常退出导致 DNS 故障，开启系统代理后 Clash 会自动修复 DNS。如果仍未能修复，尝试以管理员身份启动 cmd，输入 `netsh winsock reset` 回车 `ipconfig /flushdns`，重启电脑  
+如果你发现电脑联网但无法访问任何网站，可以尝试打开 Clash，开启系统代理再退出 Clash。该问题可能是由于上一次 Clash 未正常退出导致 DNS 故障，开启系统代理后 Clash 会自动修复 DNS。如果仍未能修复，尝试以管理员身份启动 cmd，输入 `netsh winsock reset` 回车 `ipconfig /flushdns` 回车，重启电脑。如果还未能修复请百度修复 DNS 或联系您的网络管理员（我没开玩笑）  
 ![wintips1](resources/wintips1.png)  
 ![wintips2](resources/wintips2.png)
 
