@@ -45,7 +45,7 @@
 
 ![安装Clash Verge Rev](./assets/install%20clash%20verge.jpg)
 
-一路点击`Next` `Next` `Install`就好了，其他什么都不要改。这个软件体积很小，装在C盘不会有任何问题；也不要勾选`Do not create shorcuts`以免未来找软件安装目录麻烦
+一路点击`Next` `Next` `Install`就好了，其他什么都不要改。这个软件体积很小，装在C盘不会有任何问题；也不要勾选`Do not create shortcuts`以免未来找软件安装目录麻烦
 
 ### 导入订阅链接 windows
 
